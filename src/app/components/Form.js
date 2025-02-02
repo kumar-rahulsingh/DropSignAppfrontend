@@ -55,7 +55,7 @@ export default function Form() {
                 test_mode: 1,
             };
 
-            const response = await axios.post("http://localhost:4000/dropsign", payload);
+            const response = await axios.post("https://dropsignappbackend.onrender.com", payload);
 
             if (response.status === 200) {
                 setMessage("Template sent successfully ");
